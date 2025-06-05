@@ -9,7 +9,7 @@ import Diety from "../pages/Diety"
 import Homepage from "../pages/Homepage"
 import CmpProductDetail from "../pages/components/CmpProductDetail"
 import Basket from "../pages/Basket"
-
++
 
 describe('Login tests on home page', () => {
   const kolikKockolitu = 1
@@ -90,28 +90,28 @@ describe('Login tests on home page', () => {
     Basket.bsk2PaymentCardOnline().click()
     Basket.bsk2AdressDetailsContinueBtn().click()
 
-  
- })
+
+  })
 
 
 
-    /*expectedProducts.forEach(({ name, count }) => {
-      cy.contains('table#basketItems_1 tbody tr', name)
-        .find('input[name="count"]')
-        .should('have.value', count);
-    });*/
+  /*expectedProducts.forEach(({ name, count }) => {
+    cy.contains('table#basketItems_1 tbody tr', name)
+      .find('input[name="count"]')
+      .should('have.value', count);
+  });*/
 
 
 
- 
 
-it('Should login with valid credentials, clear the basket and favorites', () => {
+
+  it('Should login with valid credentials, clear the basket and favorites', () => {
 
     CmpShared.cmpShBasket().click()
     Basket.bsk1ItemTableDelete()
     //Assert
     cy.get('div.confirm').should('not.exist')
-    
+
     Basket.bsk1ItemTableDelete()
 
   });

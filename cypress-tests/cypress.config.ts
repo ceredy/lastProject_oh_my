@@ -4,7 +4,8 @@ export default defineConfig({
   viewportHeight: 800,
   viewportWidth: 1280,
   watchForFileChanges: false,
-  
+  projectId: 'gcjszx',
+
   
   e2e: {
     baseUrl: 'https://www.spokojenypes.cz',
